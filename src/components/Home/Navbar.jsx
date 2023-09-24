@@ -40,6 +40,7 @@ function Navbar() {
         {/* <p>LOGO</p> */}
       </div>
       <a
+      href={() => false}
         className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={toggleNav}
       >

@@ -26,7 +26,7 @@ export default function MyPortfolio() {
                 fill="currentColor"
               />
             </svg> */}
-         <img className="git-hub-icon" src={gitHubCatImg}/>
+         <img className="git-hub-icon" alt="github cat" src={gitHubCatImg}/>
             Visit My GitHub
           </button>
 
