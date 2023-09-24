@@ -74,7 +74,8 @@ export default function ContactMe() {
             <span className="text-sm">I accept the terms</span>
           </label> */}
           <div>
-            <button className="btn btn-primary contact--form--btn">Submit</button>
+            <button className="btn btn-primary contact--form--btn button-86">Submit</button>
+            
           </div>
         </form>
       </section>

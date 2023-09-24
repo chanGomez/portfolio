@@ -127,6 +127,7 @@ h2 {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  font-family: sans-serif;
 }
 /* Body 3 */
 .text-sm {
@@ -268,6 +269,10 @@ h2 {
 /* Skills Style Ends */
 
 /* About Us */
+.about--section--img > img{
+  /* background: #fff; */
+  box-shadow: 0 0 32px 12px rgba(0, 0, 0, 0.15);
+}
 .about--section-description{
     font-size: 20px;
 }
@@ -282,7 +287,6 @@ h2 {
   width: 50%;
   height: 100%;
   margin-left: 200px;
-  
 }
 /* About Us Ends */
 
@@ -431,7 +435,7 @@ h2 {
 }
 .contact--input {
   display: flex;
-  font-family: "Roboto";
+  font-family: sans-serif;
   padding: 16px;
   align-items: center;
   align-self: stretch;
@@ -709,5 +713,74 @@ input[type="checkbox"] {
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
 }
+/* contact buttons section */
 
+/* CSS */
+.button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 0 auto;
+}
+
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #161616;
+  border-radius: 10px;
+}
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: var(--github);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
 /* Responsive Screens Ends*/
