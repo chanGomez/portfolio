@@ -3,8 +3,8 @@ export default function AboutMe() {
   return (
     
     <section id="AboutMe" className="about--section">
-      <div className="about--section--img">
-        <img className="aboutme--section"src={headshot} alt="About Me" 
+      <div className="about--section--img--container">
+        <img className="about--section--img" src={headshot} alt="About Me" 
         // style={{width : "400px", marginLeft : " 200px"}}/>
 />
       </div>

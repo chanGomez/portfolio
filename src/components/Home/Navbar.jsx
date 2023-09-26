@@ -70,7 +70,7 @@ function Navbar() {
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-40}
               duration={500}
               to="MyPortfolio"
               className="navbar--content"
@@ -84,7 +84,7 @@ function Navbar() {
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-40}
               duration={500}
               to="AboutMe"
               className="navbar--content"
@@ -94,18 +94,18 @@ function Navbar() {
           </li>
         </ul>
       </div>
-      {/* <Link
+      <Link
         onClick={closeMenu}
         activeClass="navbar--active-content"
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={-40}
         duration={500}
         to="Contact"
         className="btn btn-outline-primary"
       >
         Contact Me
-      </Link> */}
+      </Link>
     </nav>
   );
 }

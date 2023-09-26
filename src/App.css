@@ -48,13 +48,14 @@ p {
   -o-transition: background-color 0.5s;
 }
 .btn-outline-primary {
-  color: var(--primary);
-  background-color: var(--white);
-  border: 1px solid var(--primary);
+  color: var(--black);
+  background-color: var(--github);
+  border: var(--github);
+  font-family: sans-serif
 }
 .btn-outline-primary:hover {
-  color: var(--white);
-  background-color: var(--primary);
+  color: var(--github);
+  background-color: var(--white);
 }
 .btn-primary {
   color: var(--white);
@@ -196,6 +197,13 @@ h2 {
 }
 /* Navbar Styler Ends */
 
+/* Hero section starts */
+
+.hero--section--video{
+  width: 100%;
+}
+/* Hero section ends */
+
 
 /* Skills Section Style */
 .skills--section {
@@ -269,24 +277,30 @@ h2 {
 /* Skills Style Ends */
 
 /* About Us */
-.about--section--img > img{
-  /* background: #fff; */
-  box-shadow: 0 0 32px 12px rgba(0, 0, 0, 0.15);
-}
+
 .about--section-description{
     font-size: 20px;
 }
 .about--section {
   display: grid;
-  padding: 133.3px 85.3px;
+  padding: 133.3px 110.3px;
   align-items: center;
   gap: 114.6px;
   grid-template-columns: repeat(2, 1fr);
 }
-.about--section--img > img {
+.about--section--img--container{
+  /* display: flex; */
+  /* box-shadow: 0 0 32px 12px rgba(0, 0, 0, 0.15); */
+  display: flex;
+  justify-content: center;
+}
+
+.about--section--img{
   width: 50%;
   height: 100%;
-  margin-left: 200px;
+  box-shadow: 0 0 32px 12px rgba(0, 0, 0, 0.15);
+
+
 }
 /* About Us Ends */
 
@@ -529,6 +543,7 @@ input[type="checkbox"] {
   line-height: 28px;
 }
 
+
 /* Responsive Screens */
 @media only screen and (max-width: 1800px) {
   .hero--section--title {
@@ -570,6 +585,7 @@ input[type="checkbox"] {
     display: none;
   }
   .hero--section {
+
     display: flex;
     flex-direction: column-reverse;
     padding-bottom: 70px;

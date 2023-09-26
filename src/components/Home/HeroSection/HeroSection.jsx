@@ -4,8 +4,8 @@ export default function HeroSection() {
     return (
       <section id="heroSection" className="hero--section">
         
-        <div className="hero--section--img">
-          <video src={Video} autoPlay loop muted alt="Hero Section" />
+        <div className="hero--section--video">
+          <video src={Video} autoPlay loop muted alt="Hero Section Video" />
         </div>
 
         <div className="hero--section--content--box">

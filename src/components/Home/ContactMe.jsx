@@ -1,4 +1,47 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 export default function ContactMe() {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_0km25kt', 'template_fta2zks', form.current, 'aqILBfufTEWFWMxmS')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      // const name = e.tagret.name
+      const value = e.tagret.value
+
+      value = ""
+
+      alert("okay")
+    };
+
+
+  // const [ data, setData] = useState({
+  //   firstName:"",
+  //   lastName:"",
+  //   email:"",
+  //   phoneNumber:"",
+  //   message:""
+  // })
+
+  // function handleOnchange(e){
+  //   const name = e.target.name
+  //   const value = e.target.value
+  //   setData({...data, [name]:value})
+  // }
+
+  // function handleSubmit(e){
+  //   e.preventDefault()
+  //   alert("okay")
+  // }
     return (
       <section id="Contact" className="contact--section">
         <div>
@@ -8,16 +51,17 @@ export default function ContactMe() {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.
           </p> */}
         </div>
-        <form className="contact--form--container">
+        <form ref={form} onSubmit={sendEmail} className="contact--form--container">
           <div className="container">
             <label htmlFor="first-name" className="contact--label">
               <span className="text-md">First Name</span>
               <input
                 type="text"
                 className="contact--input text-md"
-                name="first-name"
+                name="firstName"
                 id="first-name"
-                required
+                // onChange={(handleOnchange)}
+                // value={data.firstName}
               />
             </label>
             <label htmlFor="last-name" className="contact--label">
@@ -25,9 +69,10 @@ export default function ContactMe() {
               <input
                 type="text"
                 className="contact--input text-md"
-                name="last-name"
+                name="lastName"
                 id="last-name"
-                required
+                // onChange={(handleOnchange)}
+                // value={data.lastName}
               />
             </label>
             <label htmlFor="email" className="contact--label">
@@ -37,7 +82,8 @@ export default function ContactMe() {
                 className="contact--input text-md"
                 name="email"
                 id="email"
-                required
+                // onChange={(handleOnchange)}
+                // value={data.email}
               />
             </label>
             <label htmlFor="phone-number" className="contact--label">
@@ -45,9 +91,10 @@ export default function ContactMe() {
               <input
                 type="number"
                 className="contact--input text-md"
-                name="phone-number"
+                name="phoneNumber"
                 id="phone-number"
-                required
+                // onChange={(handleOnchange)}
+                // value={data.phoneNumber}
               />
             </label>
           </div>
@@ -64,9 +111,12 @@ export default function ContactMe() {
             <span className="text-md">Message</span>
             <textarea
               className="contact--input text-md"
+              name="message"
               id="message"
               rows="8"
               placeholder="Type your message..."
+            // onChange={(handleOnchange)}
+            // value={data.message}
             />
           </label>
           {/* <label htmlFor="checkboc" className="checkbox--label">
