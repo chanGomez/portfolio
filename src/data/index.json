@@ -30,21 +30,21 @@
         "id": "1",
         "src": "./img/article.png",
         "title": "Article",
-        "description": "My mission was to recreate a webisite I use on my everyday life. That was have to be online thift stores.",
-        "link": "https://euphonious-entremet-b35e7a.netlify.app/"
+        "description": "My mission was to recreate a webisite I use on my everyday life. I built a full-stack web application with CRUD operations and PERN stack.",
+        "link": "https://article-chantal-gomez.netlify.app/"
       },
       {
         "id": "2",
         "src": "./img/youtube.png",
         "title": "Youtube 2.0",
-        "description": "In this project I use youtubes API to recreate its website with functional search box and video play.",
+        "description": "In this project I used youtubes API to recreate a starter version of it's website with functional search box and video play.",
         "link": "https://chantal-daleskii-youtube-clone.netlify.app/"
       },
       {
         "id": "3",
         "src": "./img/dream-team.png",
         "title": "Dream Team",
-        "description": "This is a fantasy NBA website. Using the PERN stack I was able to save the information inputed.",
+        "description": "This is a fantasy NBA website. Using the PERN stack I was able to save all teams made by the user. Data was created to hold all of the players names for selection purposes.",
         "link": "https://main--whimsical-faloodeh-49f706.netlify.app/"
       }
     ],

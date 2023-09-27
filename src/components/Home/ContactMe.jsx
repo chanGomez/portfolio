@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function ContactMe() {
 
@@ -15,12 +17,10 @@ export default function ContactMe() {
           console.log(error.text);
       });
 
-      // const name = e.tagret.name
-      const value = e.tagret.value
+      e.target.reset()
+      // form.reset
 
-      value = ""
-
-      alert("okay")
+      toast.success("Message Sent!");
     };
 
 
@@ -51,7 +51,20 @@ export default function ContactMe() {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit.
           </p> */}
         </div>
+        <ToastContainer
+position="bottom-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="dark"
+/>
         <form ref={form} onSubmit={sendEmail} className="contact--form--container">
+
           <div className="container">
             <label htmlFor="first-name" className="contact--label">
               <span className="text-md">First Name</span>
@@ -62,6 +75,7 @@ export default function ContactMe() {
                 id="first-name"
                 // onChange={(handleOnchange)}
                 // value={data.firstName}
+                required
               />
             </label>
             <label htmlFor="last-name" className="contact--label">
@@ -73,6 +87,7 @@ export default function ContactMe() {
                 id="last-name"
                 // onChange={(handleOnchange)}
                 // value={data.lastName}
+                required
               />
             </label>
             <label htmlFor="email" className="contact--label">
@@ -84,6 +99,8 @@ export default function ContactMe() {
                 id="email"
                 // onChange={(handleOnchange)}
                 // value={data.email}
+                required
+
               />
             </label>
             <label htmlFor="phone-number" className="contact--label">
@@ -117,6 +134,8 @@ export default function ContactMe() {
               placeholder="Type your message..."
             // onChange={(handleOnchange)}
             // value={data.message}
+            required
+
             />
           </label>
           {/* <label htmlFor="checkboc" className="checkbox--label">
