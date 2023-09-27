@@ -11,7 +11,7 @@ export default function HeroSection() {
         <div className="hero--section--content--box">
           <div className="hero--section--content--titles">
             <p className="hero--section--title">Chantal Gomez</p>
-            <p className="section--title">Fullstack Web Developer</p>
+            <p className="section--title">Fullstack Software Engineer</p>
             {/* <p className="hero--section-description">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               <br /> Dolorum, quas. Amet soluta assumenda ?
