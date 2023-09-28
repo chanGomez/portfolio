@@ -22,7 +22,7 @@ export default function AboutMe() {
           <br/>
 
           <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/chantal-gomez-marte-baa539208/"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
