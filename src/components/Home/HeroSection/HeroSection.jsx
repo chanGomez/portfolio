@@ -1,11 +1,11 @@
-import Video from "../../../assets/hero-video.mp4"
+import image from "../../../assets/background-image.jpg"
 import "./HeroSection.css"
 export default function HeroSection() {
     return (
       <section id="heroSection" className="hero--section">
         
-        <div className="hero--section--video">
-          <video src={Video} autoPlay loop muted alt="Hero Section Video" />
+        <div className="hero--section--image---container">
+          <img src={image} alt="" className="hero--section--image"/>
         </div>
 
         <div className="hero--section--content--box">
