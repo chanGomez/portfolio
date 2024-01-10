@@ -28,10 +28,10 @@
     "portfolio": [
       {
         "id": "1",
-        "src": "./img/article.png",
-        "title": "Article",
-        "description": "A mission to recreate a webisite I use on my everyday life. This is a full-stack web application made with PERN stack and CRUD operations.",
-        "link": "https://article-chantal-gomez.netlify.app/"
+        "src": "./img/giftune.png",
+        "title": "Giftune",
+        "description": "Full-stack birthday gift registry app. Use email: chantal@email.com and password: admin, to explore the application to the fullest.",
+        "link": "https://giftune.netlify.app/"
       },
       {
         "id": "2",
@@ -42,10 +42,10 @@
       },
       {
         "id": "3",
-        "src": "./img/dream-team.png",
-        "title": "Dream Team",
-        "description": "This is a NBA fantasy website. I was able to save all teams made by users, hold some starter data for selection purposes and a trash talk section.",
-        "link": "https://chantal-gomez-dream-team.netlify.app/"
+        "src": "./img/article.png",
+        "title": "Article",
+        "description": "A mission to recreate a webisite I use on my everyday life. This is a full-stack web application made with PERN stack and CRUD operations.",
+        "link": "https://article-chantal-gomez.netlify.app/"
       }
     ],
     "testimonial": [

@@ -14,10 +14,15 @@ export default function AboutMe() {
           <h1 className="skills-section--heading">About Me</h1>
           <br/>
           <p className="about--section-description">
-          My journey started in a web design 101 class while in college for my associates degree and communications design. It opened  a whole new world I didn't know was there. Since then my knowledge in this field has grown immensely.
-          </p>
-          <p className="about--section-description">
-          I saw the challenges that I might have to come across when working in this field and I said yes to those challenges. If they can do it then so can I and possibly even better one day. That's the goal.
+          I am here today because of the “how hard could it be” mentality. It helped immensely when I was a graphic designer. 
+          I did logo work, branding, videography, and in various different design styles. My passion was rooted in the process of bringing ideas to life,
+           infusing them with meaning and aesthetics. 
+           </p>
+           <br/>
+           <p className="about--section-description">
+           When I first came across my coding journey I immediately saw a blank canvas that I could solely
+            fill with algorithms and programming languages. My new journey gave me an opportunity to really take on a challenge.
+           Since then my passion is now artistic expression with technical innovation. I can't wait to see what I'll be creating next.
           </p>
           <br/>
 
