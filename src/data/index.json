@@ -30,7 +30,7 @@
         "id": "1",
         "src": "./img/giftune.png",
         "title": "Giftune",
-        "description": "Full-stack birthday gift registry app. Use email: chantal@email.com and password: admin, to explore the application to the fullest.",
+        "description": "Use email 'chantal@email.com' and password 'admin' to add gifts and check off gifts in wishlists on this full-stack birthday gift registry web app. ",
         "link": "https://giftune.netlify.app/"
       },
       {
