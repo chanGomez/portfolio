@@ -42,10 +42,10 @@
       },
       {
         "id": "3",
-        "src": "./img/article.png",
-        "title": "Article",
-        "description": "A mission to recreate a webisite I use on my everyday life. This is a full-stack web application made with PERN stack and CRUD operations.",
-        "link": "https://article-chantal-gomez.netlify.app/"
+        "src": "./img/ColorContrast.png",
+        "title": "Color Contrast Checker",
+        "description": "In this frontend project I created a bento box style layout with UI elements. I learned how color swatches where implimented and luminance is calculated.",
+        "link": "https://cute-color-contrast-checker.netlify.app/"
       }
     ],
     "testimonial": [
